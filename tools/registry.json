@@ -1,0 +1,143 @@
+{
+  "write_file": {
+    "description": "Write a file to workspace",
+    "args": [
+      "path",
+      "content"
+    ]
+  },
+  "run_script": {
+    "description": "Run a Python script",
+    "args": [
+      "path"
+    ]
+  },
+  "create_tool": {
+    "description": "Create a new reusable tool",
+    "args": [
+      "name",
+      "description",
+      "code"
+    ]
+  },
+  "calculate_statistics": {
+    "description": "Calculate basic statistics (mean, median, mode) for a list of numbers.",
+    "args": [
+      "input"
+    ]
+  },
+  "read_file_content": {
+    "description": "Reads the content of a file and returns it.",
+    "args": [
+      "input"
+    ]
+  },
+  "FileContentModifier": {
+    "description": "Modifies the content of a file by appending text to it.",
+    "args": [
+      "input"
+    ]
+  },
+  "generate_random_string": {
+    "description": "Generate a random string of specified length.",
+    "args": [
+      "input"
+    ]
+  },
+  "DataAnalyzer": {
+    "description": "A tool to analyze data and generate summary statistics.",
+    "args": [
+      "input"
+    ]
+  },
+  "count_lines_in_file": {
+    "description": "Counts the number of lines in a given file.",
+    "args": [
+      "input"
+    ]
+  },
+  "summarize_text": {
+    "description": "Summarizes a given text by extracting the main points.",
+    "args": [
+      "input"
+    ]
+  },
+  "Read File": {
+    "description": "Reads the content of a file and returns it.",
+    "args": [
+      "input"
+    ]
+  },
+  "FindAndReplaceTextInFile": {
+    "description": "This tool finds and replaces a specific text in a file.",
+    "args": [
+      "input"
+    ]
+  },
+  "FileSummarizer": {
+    "description": "Summarizes the content of a text file.",
+    "args": [
+      "input"
+    ]
+  },
+  "find_and_replace_in_file": {
+    "description": "Replaces a specific string with another in a given file.",
+    "args": [
+      "input"
+    ]
+  },
+  "TextSummarizer": {
+    "description": "Summarizes a given text to a specified length.",
+    "args": [
+      "input"
+    ]
+  },
+  "SummarizeTextTool": {
+    "description": "A tool to summarize text using the TextRank algorithm.",
+    "args": [
+      "input"
+    ]
+  },
+  "SearchTextInFile": {
+    "description": "Searches for a specific text in a file and returns the lines containing that text.",
+    "args": [
+      "input"
+    ]
+  },
+  "TextHighlighter": {
+    "description": "Highlights occurrences of a given substring in text.",
+    "args": [
+      "input"
+    ]
+  },
+  "CalculateFileLines": {
+    "description": "This tool calculates the number of lines in a given file.",
+    "args": [
+      "input"
+    ]
+  },
+  "CountWordFrequencyInFile": {
+    "description": "Counts the frequency of each word in a file.",
+    "args": [
+      "input"
+    ]
+  },
+  "CSVDataAnalyzer": {
+    "description": "A tool to analyze CSV data and provide statistics.",
+    "args": [
+      "input"
+    ]
+  },
+  "FilterLinesByLength": {
+    "description": "Filters lines in a file based on their length.",
+    "args": [
+      "input"
+    ]
+  },
+  "TextSummarizerTool": {
+    "description": "A tool to summarize text.",
+    "args": [
+      "input"
+    ]
+  }
+}

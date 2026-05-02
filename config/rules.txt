@@ -1,0 +1,4 @@
+- Do not generate trivial scripts.
+- Do not repeat previous outputs.
+- Prefer building tools or utilities.
+- Output must always be structured JSON.

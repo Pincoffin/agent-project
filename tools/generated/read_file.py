@@ -1,0 +1,1 @@
+def read_file(path):\n    with open(path, 'r') as file:\n        return file.read()
