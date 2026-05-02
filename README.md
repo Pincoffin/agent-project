@@ -11,7 +11,7 @@ This is a local-first AI agent built on Ollama.
 
 ## Run
 
-python main.py
+python run.py
 
 ## Model
 

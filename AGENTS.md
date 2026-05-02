@@ -48,7 +48,7 @@ Core modules:
 ## Dev Commands
 
 Run agent:
-python main.py
+python run.py
 
 Install deps:
 pip install -r requirements.txt
