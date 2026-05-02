@@ -1,45 +1,40 @@
 # TASK
 
-Fix and stabilize the agent loop.
+Upgrade the agent to support planning and reflection.
 
 ## Goals
 
-1. Ensure agent_core loop works reliably:
-   - No crashes
-   - Handles invalid JSON from LLM
-   - Always produces an action or fallback
+1. Add planning phase before main loop:
+   - Create core/planner.py
+   - Generate plan using LLM
+   - Store plan as list of steps
 
-2. Fix JSON parsing issues:
-   - Extract valid JSON from LLM responses
-   - Ignore malformed outputs safely
+2. Add reflection after each action:
+   - Create core/reflector.py
+   - Analyze last action + result
+   - Store reflection in memory
 
-3. Improve tool execution:
-   - Ensure correct tool is selected
-   - Validate arguments before execution
+3. Modify agent_core:
+   - Include TASK, PLAN, LAST RESULT in every LLM prompt
+   - Inject reflection into memory
+   - Use summarized results (max 500 chars)
 
-4. Improve logging:
-   - Log every step:
-     - LLM response
-     - Parsed action
-     - Tool execution
-     - Result
-     - Critic feedback
+4. Improve repetition handling:
+   - Replace fallback with self_reflect tool
+   - Prevent repeated action loops
 
-5. Add retry logic:
-   - If LLM output is invalid → retry once
-
----
+5. Add new tool:
+   - self_reflect in executor
 
 ## Constraints
 
-- DO NOT rewrite the entire system
-- Keep architecture intact
-- Improve robustness only
-
----
+- DO NOT rewrite existing architecture
+- Extend current system only
+- Maintain JSON-only outputs
 
 ## Output
 
-- Updated files only
-- Clean diffs
-- Working agent loop
+- Updated agent_core.py
+- New planner.py and reflector.py
+- Updated executor.py
+- Clean diffs only
