@@ -1,3 +1,4 @@
+
 # Local AI Agent System
 
 This is a local-first AI agent built on Ollama.
@@ -5,14 +6,11 @@ This is a local-first AI agent built on Ollama.
 ## Model
 
 Default model:
-- :contentReference[oaicite:0]{index=0} (GGUF, quantized build by bartowski)
-
-Runs locally via:
-- :contentReference[oaicite:1]{index=1}
+- Qwen2.5-Coder-7B-Instruct (GGUF, quantized build by bartowski)
 
 ## Runtime
 
-- Local inference via Ollama
+- Local inference via [Ollama](https://ollama.com)
 - Model served at http://localhost:11434
 
 ## Features
