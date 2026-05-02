@@ -75,6 +75,9 @@ pip install -r requirements.txt
 
 ## Notes for Codex
 
+The correct entry point is run.py.
+Do not create or use main.py.
+
 If unsure:
 - Inspect existing files first
 - Preserve current architecture
